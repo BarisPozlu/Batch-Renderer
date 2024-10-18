@@ -155,7 +155,7 @@ void Renderer::DrawQuad(const glm::vec2& position, const glm::vec2& size, int te
 	s_Data.indicesUsed += 6;
 }
 
-void Renderer::DrawQuad(const glm::vec2& position, const glm::vec2& size, glm::vec4 color)
+void Renderer::DrawQuad(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color)
 {
 	if (s_Data.indicesUsed >= s_MaxIndexCount)
 	{
