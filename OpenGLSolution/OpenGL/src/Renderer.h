@@ -12,7 +12,7 @@ public:
 	void Draw(const VertexArray& va, const IndexBuffer& ib, const Shader& shader) const;
 	void Init();
 	void DrawQuad(const glm::vec2& position, const glm::vec2& size, int textureID);
-	void DrawQuad(const glm::vec2& position, const glm::vec2& size, glm::vec4 color);
+	void DrawQuad(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color);
 	void Flush();
 	void ShutDown();
 	void Clear() const;
