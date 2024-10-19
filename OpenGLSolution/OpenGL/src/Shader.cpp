@@ -81,6 +81,9 @@ void Shader::CreateShader(const std::string& filePath)
     glLinkProgram(program);
     glValidateProgram(program);
 
+    glDeleteShader(vs);
+    glDeleteShader(fs);
+    
     m_program = program;
 }
 
